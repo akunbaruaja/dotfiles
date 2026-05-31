@@ -1,0 +1,46 @@
+[user]
+    name = akunbaruaja
+    email = akunbaruaja@users.noreply.github.com
+
+[core]
+    editor = nvim
+    autocrlf = input
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+[pull]
+    rebase = true
+
+[push]
+    default = current
+    autoSetupRemote = true
+
+[fetch]
+    prune = true
+
+[init]
+    defaultBranch = main
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    lg = log --oneline --graph --decorate -20
+    last = log -1 HEAD --stat
+    unstage = reset HEAD --
+    amend = commit --amend --no-edit
+    wip = !git add -A && git commit -m 'wip'
