@@ -1,0 +1,40 @@
+# Global gitignore — files that should NEVER be committed
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDEs
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Go
+vendor/
+
+# Build
+dist/
+build/
+*.o
+*.so
+*.dylib
